@@ -141,11 +141,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4 md:p-8 gap-4">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-2 sm:p-4 md:p-8 gap-2 sm:gap-4">
       {/* PDF Style Container - Landscape */}
       <div 
         ref={pdfContainerRef}
-        className="relative w-full max-w-6xl bg-white shadow-2xl aspect-[1.414/1] overflow-hidden"
+        className="relative w-full max-w-6xl bg-white shadow-2xl aspect-[1.414/1] md:aspect-[1.414/1] overflow-hidden"
       >
         {/* Page Content */}
         <div className="w-full h-full overflow-y-auto">
