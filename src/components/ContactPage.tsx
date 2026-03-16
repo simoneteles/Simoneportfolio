@@ -1,41 +1,34 @@
-import { Mail, Instagram, Globe, MessageCircle } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 export function ContactPage() {
   return (
-    <div className="h-full flex flex-col md:flex-row items-center p-6 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden">
+    <div className="h-full flex flex-col px-6 py-20 sm:px-8 sm:py-24 md:p-12 lg:p-16 pb-24 sm:pb-28 md:pb-16 justify-center md:flex-row md:items-center md:justify-between gap-12 sm:gap-16 md:gap-16 lg:gap-24">
       {/* Left Side - Title */}
-      <div className="flex-1 w-full md:w-auto text-center md:text-left mb-8 md:mb-0">
-        <div className="mb-6 md:mb-10">
-          
-        </div>
-
-        <h2 className="text-4xl sm:text-5xl md:text-6xl mb-4 md:mb-6 text-gray-900">Contato</h2>
-
-        <p className="text-gray-500 max-w-md mx-auto md:mx-0">Simone Teles</p>
+      <div className="flex-1 flex flex-col justify-center">
+        <h1 className="text-5xl sm:text-6xl md:text-4xl lg:text-5xl text-gray-900 mb-3 sm:mb-4 md:mb-2">Contato</h1>
+        <p className="text-lg sm:text-xl md:text-base text-gray-500">Simone Teles</p>
       </div>
 
-      {/* Right Side - Contact Information */}
-      <div className="flex-1 w-full md:w-auto">
-        <div className="space-y-3 sm:space-y-4 max-w-md mx-auto md:mx-0">
-          <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 border border-gray-200 rounded-sm hover:border-gray-300 transition-colors">
-            <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 flex-shrink-0" />
-            <span className="text-gray-700 text-xs sm:text-sm break-all">simonebtfontenele@gmail.com</span>
-          </div>
-
-          
-
-          
-
-          <div className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 border border-gray-200 rounded-sm hover:border-gray-300 transition-colors">
-            <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 flex-shrink-0" />
-            <span className="text-gray-700 text-xs sm:text-sm">(61) 99121-6523</span>
-          </div>
+      {/* Right Side - Contact Info */}
+      <div className="flex-1 flex flex-col justify-center space-y-4 sm:space-y-6 md:space-y-4">
+        {/* Email */}
+        <div className="flex items-center gap-3 sm:gap-4 md:gap-3 p-4 sm:p-6 md:p-4 bg-white border border-gray-200 rounded-lg">
+          <Mail className="w-5 h-5 sm:w-6 sm:h-6 md:w-5 md:h-5 text-gray-400 flex-shrink-0" />
+          <span className="text-base sm:text-lg md:text-sm text-gray-600 break-all">simonebtfontenele@gmail.com</span>
         </div>
 
-        {/* Footer Message */}
-        <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-gray-200 max-w-md mx-auto md:mx-0">
-          <p className="text-sm text-gray-500 text-center md:text-left">Obrigada por ver o meu portfólio!</p>
+        {/* Phone */}
+        <div className="flex items-center gap-3 sm:gap-4 md:gap-3 p-4 sm:p-6 md:p-4 bg-white border border-gray-200 rounded-lg">
+          <Phone className="w-5 h-5 sm:w-6 sm:h-6 md:w-5 md:h-5 text-gray-400 flex-shrink-0" />
+          <span className="text-base sm:text-lg md:text-sm text-gray-600">
+            (61) 99121-6523
+          </span>
         </div>
+
+        {/* Thank you message */}
+        <p className="text-center text-sm sm:text-base md:text-xs text-gray-400 mt-6 sm:mt-8 md:mt-6">
+          Obrigada por ver o meu portfólio!
+        </p>
       </div>
     </div>
   );

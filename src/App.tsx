@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { CoverPage } from './components/CoverPage';
 import { AboutPage } from './components/AboutPage';
 import { GalleryPage1 } from './components/GalleryPage1';
@@ -14,6 +14,7 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isGenerating, setIsGenerating] = useState(false);
   const pdfContainerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   
   const pages = [
     { component: CoverPage, title: 'Cover' },
@@ -25,6 +26,15 @@ export default function App() {
   ];
 
   const PageComponent = pages[currentPage].component;
+
+  // Scroll to top when page changes
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0;
+    }
+    // Also scroll window for mobile
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   const nextPage = () => {
     if (currentPage < pages.length - 1) {
@@ -145,10 +155,10 @@ export default function App() {
       {/* PDF Style Container - Landscape */}
       <div 
         ref={pdfContainerRef}
-        className="relative w-full max-w-6xl bg-white shadow-2xl aspect-[1.414/1] md:aspect-[1.414/1] overflow-hidden"
+        className="relative w-full max-w-6xl bg-white shadow-2xl overflow-hidden md:aspect-[1.414/1]"
       >
         {/* Page Content */}
-        <div className="w-full h-full overflow-y-auto">
+        <div className="w-full h-full overflow-y-auto md:overflow-hidden" ref={contentRef}>
           <PageComponent />
         </div>
 
