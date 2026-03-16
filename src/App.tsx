@@ -142,18 +142,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4 md:p-8 gap-4">
-      {/* Export Button */}
-      <div className="w-full max-w-6xl flex justify-end">
-        <Button
-          onClick={generatePDF}
-          disabled={isGenerating}
-          className="gap-2"
-        >
-          <Download className="h-4 w-4" />
-          {isGenerating ? 'Gerando PDF...' : 'Exportar para PDF'}
-        </Button>
-      </div>
-
       {/* PDF Style Container - Landscape */}
       <div 
         ref={pdfContainerRef}
