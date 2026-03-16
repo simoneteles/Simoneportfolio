@@ -1,7 +1,9 @@
 import { useState, useRef } from 'react';
 import { CoverPage } from './components/CoverPage';
 import { AboutPage } from './components/AboutPage';
-import { GalleryPage } from './components/GalleryPage';
+import { GalleryPage1 } from './components/GalleryPage1';
+import { GalleryPage2 } from './components/GalleryPage2';
+import { GalleryPage3 } from './components/GalleryPage3';
 import { ContactPage } from './components/ContactPage';
 import { ChevronLeft, ChevronRight, Download } from 'lucide-react';
 import { Button } from './components/ui/button';
@@ -16,9 +18,9 @@ export default function App() {
   const pages = [
     { component: CoverPage, title: 'Cover' },
     { component: AboutPage, title: 'About' },
-    { component: GalleryPage, title: 'Gallery 1', galleryPage: 1 },
-    { component: GalleryPage, title: 'Gallery 2', galleryPage: 2 },
-    { component: GalleryPage, title: 'Gallery 3', galleryPage: 3 },
+    { component: GalleryPage1, title: 'Gallery 1' },
+    { component: GalleryPage2, title: 'Gallery 2' },
+    { component: GalleryPage3, title: 'Gallery 3' },
     { component: ContactPage, title: 'Contact' },
   ];
 
@@ -159,7 +161,7 @@ export default function App() {
       >
         {/* Page Content */}
         <div className="w-full h-full overflow-y-auto">
-          <PageComponent galleryPage={pages[currentPage].galleryPage} />
+          <PageComponent />
         </div>
 
         {/* Navigation Controls */}
