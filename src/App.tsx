@@ -150,7 +150,7 @@ export default function App() {
           className="gap-2"
         >
           <Download className="h-4 w-4" />
-          {isGenerating ? 'PDF 생성 중...' : 'PDF로 내보내기'}
+          {isGenerating ? 'Gerando PDF...' : 'Exportar para PDF'}
         </Button>
       </div>
 
