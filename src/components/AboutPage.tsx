@@ -18,24 +18,18 @@ export function AboutPage() {
       {/* Right Side - Content */}
       <div className="flex-1 flex flex-col justify-center space-y-8">
         <div className="border-l-2 border-gray-900 pl-6">
-          <h3 className="text-sm mb-3 text-gray-900 tracking-wider uppercase">작품 스타일</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            [작품 스타일과 특징을 설명해주세요. 주로 사용하는 재료, 기법, 영감을 받는 대상 등을 작성하면 좋습니다.]
-          </p>
+          <h3 className="text-sm mb-3 text-gray-900 tracking-wider uppercase">Formação</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">Ensino superior completo em Análise e Desenvolvimento de Sistemas.</p>
         </div>
 
         <div className="border-l-2 border-gray-900 pl-6">
-          <h3 className="text-sm mb-3 text-gray-900 tracking-wider uppercase">경력 & 학력</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            [학력, 전시 경험, 수상 경력 등을 작성해주세요.]
-          </p>
+          <h3 className="text-sm mb-3 text-gray-900 tracking-wider uppercase">Experiência</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">Design UI/UX - Layouts para Landing Pages e sites - Criativos para mídia online e redes sociais - Desenvolvimento Front-End.</p>
         </div>
 
         <div className="border-l-2 border-gray-900 pl-6">
-          <h3 className="text-sm mb-3 text-gray-900 tracking-wider uppercase">예술 철학</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
-            [작품 활동을 통해 전달하고 싶은 메시지나 예술적 가치관을 작성해주세요.]
-          </p>
+          <h3 className="text-sm mb-3 text-gray-900 tracking-wider uppercase">skills</h3>
+          <p className="text-gray-600 text-sm leading-relaxed">FIGMA, Adobe Photoshop, HTML, JavaScript, CSS, UI/UX design</p>
         </div>
       </div>
     </div>

@@ -10,29 +10,27 @@ export function CoverPage() {
       {/* Main Content - Left Aligned */}
       <div className="flex-1 relative z-10">
         <div className="mb-12">
-          <div className="inline-block px-5 py-1.5 border border-gray-300 rounded-sm mb-8">
-            <span className="text-gray-600 text-xs tracking-[0.2em] uppercase">Art Portfolio</span>
-          </div>
+          <div className="inline-block px-5 py-1.5 border border-gray-300 rounded-sm mb-8"><span className="text-gray-600 text-xs tracking-[0.2em] uppercase">Portfolio</span></div>
         </div>
 
         <h1 className="text-7xl md:text-8xl mb-8 text-gray-900 tracking-tight leading-tight">Simone<br />Teles</h1>
 
-        <p className="text-gray-500 mb-12">Creative Collection 2025</p>
+        <p className="text-gray-500 mb-12">Águas Claras - DF</p>
 
         {/* Artist Name Placeholder */}
         <div className="mt-20 pt-8 border-t border-gray-200 max-w-md">
           <p className="text-xs text-gray-400 mb-3 tracking-wider uppercase">CONTATO</p>
-          <p className="text-xl text-gray-800">simonebtfontenele@gmai.com</p>
+          <p className="text-xl text-gray-800">simonebtfontenele@gmail.com</p>
         </div>
       </div>
 
       {/* Right Side - Profile Image */}
       <div className="flex-1 flex items-center justify-center">
-        <div className="w-80 h-80 overflow-hidden rounded-sm border border-gray-200">
+        <div className="w-64 overflow-hidden rounded-sm border border-gray-200">
           <img 
             src={profileImage} 
             alt="Simone Teles" 
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-cover"
           />
         </div>
       </div>
